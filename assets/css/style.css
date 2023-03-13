@@ -387,3 +387,23 @@ nav ul li a{
         animation: none;
     }
 }
+@media screen and (max-width: 600px){
+
+    .container__cover{
+        padding: 20px;
+    }
+
+    .text__cover{
+        padding-right: 0;
+    }
+
+    .text__cover h1{
+        font-size:40px;
+    }
+
+    .text__cover p{
+        max-width: 700px;
+
+    }
+    
+}
