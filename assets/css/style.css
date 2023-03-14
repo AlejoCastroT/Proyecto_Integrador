@@ -7,7 +7,7 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
-
+/*VARIABLES REUTILIZABLES*/
 :root{
     --color_text-primary: #256b5e;
     --color_text-secundary: #101E2C;
@@ -292,7 +292,7 @@ nav ul li a{
     width: 500px;
 
 }
-
+/*INCIO DEL RESPONSIVE*/
 @media screen and (max-width: 1700px){
     .container__cover{
         background-position: 50%;
@@ -327,6 +327,7 @@ nav ul li a{
         width: 300px;
     }
 }
+
 @media screen and (max-width: 1020px){
     .container__cover .image__cover img{
         width: 300px;
@@ -335,6 +336,7 @@ nav ul li a{
         max-width: 600px;
     }
 }
+
 @media screen and (max-width: 980px){
     .container__cover .image__cover img{
         display: none;
@@ -387,6 +389,7 @@ nav ul li a{
         animation: none;
     }
 }
+
 @media screen and (max-width: 600px){
 
     .container__cover{
@@ -407,3 +410,4 @@ nav ul li a{
     }
     
 }
+/*FIN DEL RESPONSIVE*/

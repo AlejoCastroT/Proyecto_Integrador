@@ -5,6 +5,7 @@
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
 }
+/*VARIABLES REUTILIZABLES*/
 :root{
     --color_text-primary: #256b5e;
     --color_text-secundary: #101E2C;
@@ -134,7 +135,7 @@ main{
     max-width: 800px;
     margin: auto;
     position: relative;
-    margin-top: 45px;
+    margin-top: 5px;
 }
 
 .caja__trasera{
