@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    if(isset($_SESSION['usuario'])){
+        header("Location: /sistema/index.html");
+        exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +30,7 @@
   <div class="container__nav">
                 <nav id="nav">
                     <ul>
-                        <li><a href="index.html"class="select">Inicio</a></li>
+                        <li><a href="index.html "class="select">Inicio</a></li>
                     </ul>
                 </nav>
 
@@ -50,20 +59,20 @@
                 <!--Formulario de Login y registro-->
                 <div class="contenedor__login-register">
                     <!--Login-->
-                    <form action="" class="formulario__login">
+                    <form action="php/login_ususario_be.php" method="POST" class="formulario__login">
                         <h2>Iniciar Sesión</h2>
-                        <input type="text" placeholder="Correo Electronico">
-                        <input type="password" placeholder="Contraseña">
+                        <input type="text" placeholder="Correo Electronico" name="correo">
+                        <input type="password" placeholder="Contraseña" name="contrasena">
                         <button>Entrar</button>
                     </form>
 
-                    <!--Register-->
-                    <form action="" class="formulario__register">
+                    <!--Registro-->
+                    <form action="php/registro_ususario_be.php" method="POST" class="formulario__register">
                         <h2>Regístrarse</h2>
-                        <input type="text" id="register-nombre" placeholder="Nombre completo">
-                        <input type="text" id="register-correo" placeholder="Correo Electronico">
-                        <input type="text" id="register-usuario" placeholder="Usuario">
-                        <input type="password" id="register-contraseña" placeholder="Contraseña">
+                        <input type="text" id="register-nombre" placeholder="Nombre completo" name="nombre_completo">
+                        <input type="text" id="register-correo" placeholder="Correo Electronico" name="correo">
+                        <input type="text" id="register-usuario" placeholder="Usuario" name="usuario">
+                        <input type="password" id="register-contraseña" placeholder="Contraseña" name="contrasena">
                         <button type="submit">Regístrarse</button>
                     </form>
                 </div>
