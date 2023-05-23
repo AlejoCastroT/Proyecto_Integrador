@@ -1,11 +1,4 @@
-<?php
-    session_start();
 
-    if(isset($_SESSION['usuario'])){
-        header("Location: /sistema/index.html");
-        exit();
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">

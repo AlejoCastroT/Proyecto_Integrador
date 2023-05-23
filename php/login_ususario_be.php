@@ -13,7 +13,7 @@
 
     if(mysqli_num_rows($validar_login) >0){
         $_SESSION['usuario'] = $correo;
-        header("location: ../sistema/index.html");
+        header("location: ../sistema/crud.html");
         exit();
     }else{
         echo'
